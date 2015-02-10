@@ -113,7 +113,7 @@ def take_photo():
             # Wait to ensure that print queue doesn't pile up
             # TODO: check status of printer instead
             # of using this arbitrary wait time
-            time.sleep(110)
+            # time.sleep(110)
             print(FINISHED_PROCESSING_TEXT)
             GPIO.output(PROCESSING_LED, False)
             GPIO.output(SHUTTER_BUTTON_LED, True)
