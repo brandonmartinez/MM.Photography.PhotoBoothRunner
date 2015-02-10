@@ -52,3 +52,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# PhotoBooth Runner Specific Ignores
+PhotoBoothRunnerStartup.sh
