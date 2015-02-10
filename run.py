@@ -137,10 +137,10 @@ setup_gpio()
 print READY_TEXT
 while (takePhotos is True):
     try:
-        if (GPIO.input(SHUTTER_BUTTON)):
-            take_photo()
         if(GPIO.input(QUIT_BUTTON)):
             quit_application()
+        if (GPIO.input(SHUTTER_BUTTON)):
+            take_photo()
     except:
         print ERROR_TEXT, sys.exc_info()[0]
         pass
