@@ -37,7 +37,6 @@ POSING_LED = 18
 
 # State Variables
 takePhotos = True
-cleanedUp = False
 
 
 # Shared Functions
@@ -64,12 +63,8 @@ def setup_gpio():
 
 
 def cleanup_gpio():
-    global cleanedUp
-
     print GPIO_CLEANUP_TEXT
-    if(cleanedUp is False):
-        cleanedUp = True
-        GPIO.cleanup()
+    GPIO.cleanup()
 
 
 def take_photo():
@@ -129,7 +124,6 @@ def quit_application():
 
     print QUITTING_TEXT
     takePhotos = False
-    cleanup_gpio()
 
 # Main Application
 ####################################
@@ -150,5 +144,3 @@ while (takePhotos is True):
     except:
         print ERROR_TEXT, sys.exc_info()[0]
         pass
-
-print "Application End"
