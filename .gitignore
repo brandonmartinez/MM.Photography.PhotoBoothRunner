@@ -55,3 +55,4 @@ target/
 
 # PhotoBooth Runner Specific Ignores
 PhotoBoothRunnerStartup.sh
+Logs/
