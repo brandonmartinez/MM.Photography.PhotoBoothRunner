@@ -31,7 +31,7 @@ PROCESSING_COMMAND = "sudo /home/pi/scripts/photobooth/assemble_and_print"
 # GPIO Pins
 SHUTTER_BUTTON = 24
 SHUTTER_BUTTON_LED = 23
-QUIT_BUTTON = 25
+QUIT_BUTTON = 26
 PROCESSING_LED = 22
 POSING_LED = 18
 
@@ -46,12 +46,19 @@ cleanedUp = False
 def setup_gpio():
     print GPIO_SETUP_TEXT
 
+    # Set the mode to BCM to use "Friendly" names
     GPIO.setmode(GPIO.BCM)
+
+    # Set inputs
     GPIO.setup(SHUTTER_BUTTON, GPIO.IN)
     GPIO.setup(QUIT_BUTTON, GPIO.IN)
+
+    # Set outputs
     GPIO.setup(POSING_LED, GPIO.OUT)
     GPIO.setup(SHUTTER_BUTTON_LED, GPIO.OUT)
     GPIO.setup(PROCESSING_LED, GPIO.OUT)
+
+    # Set default pin assignments
     GPIO.output(SHUTTER_BUTTON_LED, True)
     GPIO.output(PROCESSING_LED, False)
 
