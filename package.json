@@ -1,0 +1,40 @@
+{
+  "name": "PhotoBoothRunner",
+  "description": "A node.js PhotoBooth server for the Raspberry Pi",
+  "version": "0.1.0",
+  "homepage": "https://github.com/brandonmartinez/MM.Photography.PhotoBoothRunner",
+  "author": {
+    "name": "Martinez Media, LLC",
+    "email": "contact@martinezmedia.net",
+    "url": "http://www.martinezmedia.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonmartinez/MM.Photography.PhotoBoothRunner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brandonmartinez/MM.Photography.PhotoBoothRunner/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/brandonmartinez/MM.Photography.PhotoBoothRunner/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/PhotoBoothRunner",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "q": "^1.1.2",
+    "rpi-gpio": "^0.5.1"
+  },
+  "keywords": []
+}
