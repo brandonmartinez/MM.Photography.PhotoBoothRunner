@@ -3,4 +3,4 @@
 # Rename this to PhotoBoothRunnerStartup.sh and add to your startup process
 
 sleep 6
-sudo python /home/pi/Scripts/PhotoBoothRunner/run.py
+su pi -c 'node /home/pi/Scripts/PhotoBoothRunner/server.js < /dev/null &'
