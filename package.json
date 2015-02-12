@@ -5,7 +5,7 @@
   "homepage": "https://github.com/brandonmartinez/MM.Photography.PhotoBoothRunner",
   "author": {
     "name": "Martinez Media, LLC",
-    "email": "contact@martinezmedia.net",
+    "email": "photoboothrunner@martinezmedia.net",
     "url": "http://www.martinezmedia.net/"
   },
   "repository": {
@@ -18,7 +18,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/brandonmartinez/MM.Photography.PhotoBoothRunner/blob/master/LICENSE-MIT"
+      "url": "https://github.com/brandonmartinez/MM.Photography.PhotoBoothRunner/blob/master/LICENSE"
     }
   ],
   "main": "lib/PhotoBoothRunner",
