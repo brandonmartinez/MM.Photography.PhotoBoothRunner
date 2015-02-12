@@ -33,6 +33,7 @@
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-contrib-nodeunit": "~0.2.0",
     "grunt-contrib-watch": "~0.5.3",
+    "onoff": "^1.0.0",
     "q": "^1.1.2",
     "rpi-gpio": "^0.5.1"
   },
