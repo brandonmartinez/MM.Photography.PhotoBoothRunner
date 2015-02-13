@@ -10,6 +10,11 @@ var PhotoBoothRunner = require('PhotoBoothRunner');
 PhotoBoothRunner.awesome(); // "awesome"
 ```
 
+## Supported Capture Drivers
+
+sudo apt-get install gphoto2
+sudo apt-get install fswebcam
+
 ## Documentation
 _(Coming soon)_
 
