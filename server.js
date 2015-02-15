@@ -1,3 +1,5 @@
+/*jslint node: true, white: true */
+
 /*
  * PhotoBoothRunner - Server
  * https://github.com/brandonmartinez/MM.Photography.PhotoBoothRunner
@@ -7,4 +9,6 @@
  */
 
 var PhotoBoothRunner = require('./lib/PhotoBoothRunner.js');
-PhotoBoothRunner.start();
+PhotoBoothRunner.start({
+	PhotoCapturer: 'echo $USER captured photo'
+});
