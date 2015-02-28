@@ -10,5 +10,5 @@
 
 var PhotoBoothRunner = require('./lib/PhotoBoothRunner.js');
 PhotoBoothRunner.start({
-	PhotoCapturer: 'echo $USER captured photo'
+	//PhotoCapturer: 'echo $USER captured photo'
 });
