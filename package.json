@@ -37,7 +37,8 @@
   "dependencies": {
     "debug": "^2.1.1",
     "q": "^1.1.2",
-    "rpi-gpio": "git://github.com/brandonmartinez/rpi-gpio.js.git"
+    "rpi-gpio": "git://github.com/brandonmartinez/rpi-gpio.js.git",
+    "socket.io": "^1.3.4"
   },
   "keywords": []
 }
