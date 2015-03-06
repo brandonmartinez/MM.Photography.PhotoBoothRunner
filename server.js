@@ -17,6 +17,6 @@ server.init({
 	serverHttpPort: 8888
 });
 
-// PhotoBoothRunner.start({
-// 	PhotoCapturer: 'echo $USER captured photo'
-// }, server);
+PhotoBoothRunner.start({
+	PhotoCapturer: 'echo $USER captured photo'
+}, server);
