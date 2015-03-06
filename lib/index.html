@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PhotoBooth</title>
+	</head>
+	<body>
+		<h1>PhotoBooth</h1>
+		<div id="messages">
+			
+		</div>
+
+		<script type="text/javascript" src="jquery.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="ViewModel.js"></script>
+		<script type="text/javascript">
+			var viewModel = new ViewModel(),
+				options = {
+					messageElement: $('#messages'),
+					socket: io()
+				};
+			viewModel.init(options);
+		</script>
+	</body>
+</html>
