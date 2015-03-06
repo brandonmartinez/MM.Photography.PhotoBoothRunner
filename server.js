@@ -8,12 +8,14 @@
  * Licensed under the MIT license.
  */
 
-// var PhotoBoothRunner = require('./lib/PhotoBoothRunner.js');
+var PhotoBoothServer = require('./lib/PhotoBoothServer.js').server,
+	server = new PhotoBoothServer(),
+	PhotoBoothRunner = require('./lib/PhotoBoothRunner.js');
+
+// Configure and initialize our server
+server.init({
+	serverHttpPort: 8888
+});
 // PhotoBoothRunner.start({
 // 	//PhotoCapturer: 'echo $USER captured photo'
-// });
-
-var PhotoBoothServer = require('./lib/PhotoBoothServer.js');
-PhotoBoothServer.start({
-  serverHttpPort: 8888
-});
+// }, server);
