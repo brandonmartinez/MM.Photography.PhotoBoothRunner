@@ -2,17 +2,34 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PhotoBooth</title>
+		<title>Martinez Media PhotoBooth</title>
+		<link rel="stylesheet" href="/style.css" type="text/css" />
 	</head>
 	<body>
-		<h1>PhotoBooth</h1>
-		<div id="messages">
-			
+		<div id="container">
+			<header id="title">
+				<h1>Martinez Media PhotoBooth</h1>
+			</header>
+			<aside id="sidebar">
+				<div id="instructions">
+					<p>To Begin:</p>
+					<ol>
+
+					</ol>
+				</div>
+				<div id="messages">
+
+				</div>
+			</aside>
+			<section id="photobooth">
+
+			</section>
 		</div>
 
-		<script type="text/javascript" src="jquery.js"></script>
-		<script src="/socket.io/socket.io.js"></script>
-		<script type="text/javascript" src="ViewModel.js"></script>
+		<!-- Scripts -->
+		<script type="text/javascript" src="/jquery.js"></script>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="/ViewModel.js"></script>
 		<script type="text/javascript">
 			var viewModel = new ViewModel(),
 				options = {

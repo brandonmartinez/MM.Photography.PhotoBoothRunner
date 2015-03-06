@@ -1,0 +1,9 @@
+#container {
+	@include outer-container();
+	padding: em(20);
+	
+	@import 'layout/header';
+	@import 'layout/sidebar';
+	@import 'layout/content';
+	@import 'layout/footer';
+}
